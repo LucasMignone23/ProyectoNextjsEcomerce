@@ -1,5 +1,7 @@
+
 import Navbar from "./components/layouts/navbar/navbar.js";
 import Footer from "./components/layouts/footer/footer.js";
+import { CartProvider } from "./context/cartContext";
 
 export const metadata = {
   title: "Ecommerce | Phina",
@@ -48,8 +50,10 @@ export async function generateMetadata({params, searchParams}, parent) {
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <Footer />
+      <CartProvider>
+        <Navbar />
+        <Footer />
+      </CartProvider>
     </>
   );
 }

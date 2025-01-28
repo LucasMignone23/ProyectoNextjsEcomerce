@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ShoppingCart } from "@mui/icons-material";
 
 const MenuList = () => {
   return (
@@ -15,6 +16,9 @@ const MenuList = () => {
         </Link>
         <Link href="/productos" className="block text-lg  text-[#4f3018] hover:text-gray-600 transition-colors">
           Productos
+        </Link>
+        <Link href="/cart" className="block text-lg  text-[#4f3018] hover:text-gray-600 transition-colors">
+          <ShoppingCart/>
         </Link>
       </nav>
     </div>
