@@ -8,11 +8,11 @@ import ButtonBack from "../../../components/common/button/buttonBack";
 import Navbar from "../../../components/layouts/navbar/navbar";
 import Footer from "../../../components/layouts/footer/footer";
 
-export const metadata = {
+/*export const metadata = {
   title: "Ecommerce | Categorías",
   description: "Explora productos por categoría",
   keywords: "Ecommerce, ropa, categorías, tienda, online",
-};
+};*/
 
 export default function CategoryPage({ params }) {
   const [productos, setProductos] = useState([]);
