@@ -12,7 +12,7 @@ export default function ProductoPage({ params }) {
   useEffect(() => {
     const fetchProducto = async () => {
       try {
-        const productoDoc = doc(db, "productos", id);
+        const productoDoc = doc(db, "products", id);
         const productoSnap = await getDoc(productoDoc);
 
         if (productoSnap.exists()) {

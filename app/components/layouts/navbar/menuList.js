@@ -4,7 +4,7 @@ import { ShoppingCart } from "@mui/icons-material";
 const MenuList = () => {
   return (
     <div>
-      <nav className="mt-4 space-x-4 flex justify-center ">
+      <nav className="mt-4 space-x-4 flex justify-center">
         <Link href="/" className="block text-lg text-[#4f3018] hover:text-gray-600 transition-colors">
           Home
         </Link>
@@ -18,7 +18,11 @@ const MenuList = () => {
           Productos
         </Link>
         <Link href="/cart" className="block text-lg  text-[#4f3018] hover:text-gray-600 transition-colors">
-          <ShoppingCart/>
+          <ShoppingCart />
+        </Link>
+        {/* Agregado Iniciar sesión / Registrarse */}
+        <Link href="/login" className="block text-lg text-[#4f3018] hover:text-gray-600 transition-colors">
+          Iniciar sesión
         </Link>
       </nav>
     </div>

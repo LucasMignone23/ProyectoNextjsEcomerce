@@ -16,7 +16,7 @@ export default function Productos() {
   useEffect(() => {
     const fetchProductos = async () => {
       try {
-        const productosRef = collection(db, "productos");
+        const productosRef = collection(db, "products");
         const querySnapshot = await getDocs(productosRef);
 
         const allProducts = querySnapshot.docs.map((doc) => ({

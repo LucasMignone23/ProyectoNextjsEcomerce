@@ -63,6 +63,13 @@ export default function Carrito() {
           >
             Volver a productos
           </button>
+
+          <button
+            onClick={() => router.push("/checkout")}
+            className="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors"
+          >
+            Finalizar compra
+          </button>
         </div>
       </main>
       <Footer />

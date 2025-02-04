@@ -21,7 +21,7 @@ export default function CategoryPage({ params }) {
   useEffect(() => {
     const fetchProductos = async () => {
       try {
-        const productosRef = collection(db, "productos");
+        const productosRef = collection(db, "products");
         const q = query(productosRef, where("category", "==", category));
         const querySnapshot = await getDocs(q);
 
